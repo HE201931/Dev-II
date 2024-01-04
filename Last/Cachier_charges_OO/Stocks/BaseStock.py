@@ -24,10 +24,3 @@ class Stock:
 
     def filtrer_produits_par_type(self, type_produit):
         return [produit for produit in self.__produits if produit.type_produit == type_produit]
-
-    def produits_proches_peremption(self):
-        date_aujourdhui = datetime.date.today()
-        return [produit for produit in self.__produits if produit.date_peremption - date_aujourdhui <= datetime.timedelta(days=7)]
-
-    def produits_stock_arrivant_a_terme(self):
-        return [produit for produit in self.__produits if produit.quantite <= 10]
