@@ -17,7 +17,7 @@ class Stock:
         self.__produits = [produit for produit in self.__produits if produit.id_produit != id_produit]
 
     def modifier_produit(self, id_produit, nouveau_produit):
-        for i, produit in enumerate(self.produits):
+        for i, produit in enumerate(self.__produits):
             if produit.id_produit == id_produit:
                 self.__produits[i] = nouveau_produit
                 break

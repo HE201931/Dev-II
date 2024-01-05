@@ -10,9 +10,9 @@ class TypeProduit(Enum):
 
 class Produit:
     def __init__(self, id_produit, nom, type_produit, quantite):  # date_peremption):
-        self.__id_produit = id_produit
+        self.id_produit = id_produit
         self.__nom = nom
-        self.__type_produit = TypeProduit(type_produit)
+        self.type_produit = TypeProduit(type_produit)
         self.__quantite = quantite
         # self.__date_peremption = datetime.datetime.strptime(date_peremption, "%Y-%m-%d").date()
 
