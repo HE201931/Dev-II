@@ -13,8 +13,7 @@ class TestStock(unittest.TestCase):
 
     def setUp(self):
         self.__stock = Stock()
-
-        # Création de quelques produits pour les tests
+        
         self.__produit_bricolage = ProduitBricolage(1, "Marteau", TypeProduit.BRICOLAGE, 10, "Bois")
         self.__produit_alimentaire = ProduitAlimentaire(2, "Pain", TypeProduit.ALIMENTAIRE, 20, ["Gluten"],
                                                         date(2024, 12, 31))
